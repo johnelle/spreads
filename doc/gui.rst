@@ -15,7 +15,8 @@ You can launch the GUI with the following command::
 
     $ spread gui
 
-
+.. _gui-ref:
+	
 Interface
 ---------
 On the :ref:`first screen <config_page>`, you can adjust various settings for

@@ -1,10 +1,11 @@
+.. _python-install:
+
 Installation
 ============
 
 Prerequisites
 -------------
 * Python 2.7 with a recent version of pip_ installed
-
 Install requirements
 --------------------
 To use some of the included plugins, you might want to install the following
@@ -48,6 +49,7 @@ use with caution!)::
 
     $ sudo pip install git+git://github.com/DIYBookScanner/spreads.git@master
 
+.. _python-config: 
 
 Configuration
 =============

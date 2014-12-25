@@ -1,9 +1,10 @@
 .. toctree::
    :maxdepth: 2
-
+   
    setup-other
    setup-spreadpi
-   web
+   web_install
+   web_interface
    gui
    cli
    faq
@@ -44,20 +45,66 @@ Individual plugins also contain parts written in JavaScript and Lua. Through
 the web-plugin it also offers a :doc:`REST(-ish) API <web_api>` that can be
 accessed with any programming language that has a HTTP library.
 
-To get started with the software, we suggest you begin by reading the
-Introductory Notes that lay out the general workflow of the application and
-explain some of the terminology used across all interfaces. Then, if you want
-to install and configure the software yourself, head over to the
-:doc:`Installation and Setup guide <setup-other>`. If you are a user of the
-spreadpi distribution, use the :doc:`spreadpi guide <setup-spreadpi>`.
+**To get started we suggest you choose between one of two primary Spreads usage patterns to 
+get up and running quickly:**
 
+Spreads as an Appliance (SpreadPi)
+----------------------------------
+In this scenario Spreads is installed on a dedicated 
+`Raspberry Pi <http://www.raspberrypi.org/>`_ computer which
+controls the scanning process. The scanning cameras are attached to the Raspberry Pi. 
+Once the page images are captured, they are transferred via a network connection 
+to a general purpose computer for final processing. The Spreads software is controlled 
+remotely via a network-based web interface running on the Raspberry Pi.
+
+**Required:** Raspberry Pi B or B+, SD Card(8GB minimum), network connection (wired
+connection recommended)
+
+To get started:
+
+   - :doc:`Installing SpreadPi<setup-spreadpi>`
+   - :doc:`Using The Web Interface<web_interface>`
+
+.. hint::
+ 
+  SpreadPi is a special version of the Raspberry Pi operating system which has
+  been optimized for running Spreads.  Although you can manually perform the Spreads 
+  software install on a Raspberry Pi it is not recommended.
+   
+Spreads as a Software Utility
+-----------------------------
+In this scenario Spreads is installed on a general-purpose computer and the scanning
+process is controlled from the command line, GUI interface or web interface on that
+computer.  The scanner cameras are attached directly to the laptop or desktop computer 
+and the entire process takes place in the local environment.
+
+**Required:** Laptop or Desktop computer with Python 2.7 or 3.x installed
+
+To get started:
+  - :doc:`Command Line Installation and Configuration<setup-other>`
+  - :doc:`GUI Installation and Configuration<gui>` (optional)
+  - :doc:`Installing the Web Interface<web_install>` (optional)
+Using Spreads:
+  - :doc:`Command Line Tutorial<tutorial>`
+  - :doc:`Command Line Reference<gui>`
+  - :doc:`Using the Web Interface<web_interface>`
+
+Next Steps
+----------  
+After you have Spreads up and running you may want to tailor the 
+software to suit your workflow.  For example, you can login to the Raspberry
+Pi device and issue command line commands via ssh. You can even use the 
+:doc:`api` API to implement your own customization(s).  Because Spreads 
+is implemented in a modular fashion there is a lot of flexibility available
+for you to make Spreads fit the way you want to work.
+ 
 .. note::
 
     In case you're wondering about the choice of mascot, the figure depicted is
     a Benedictine monk in his congregation's traditional costume, sourced from
     a `series of 17th century etchings`_ by the Bohemian artist `Wenceslaus
     Hollar`_, depicting the robes of various religious orders. The book he
-    holds in his hand is no accident, but was likely delibaretely chosen by the
+    holds in his hand is no accident, but was likely deliberately chosen by the
     artist: The Benedictines_ used to be among the most prolific `copiers of
     books`_ in the middle-ages, preserving Europe's written cultural heritage,
     book spread for book spread, in a time when a lot of it was in danger of
