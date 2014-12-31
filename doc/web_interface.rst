@@ -23,21 +23,21 @@ your browser to the ip address of the Raspberry Pi running SpreadPi::
 
 .. hint::
  
-  By default SpreadPi used the nodename "spreadpi" on the network.  If you
+  By default SpreadPi uses the nodename "spreadpi" on the network.  If you
   review the list of connected devices on your router it should be easy to 
-  find the address of spreadpi, even when DHCP moves the assignment to a 
-  different address.  
+  find the ip-address of spreadpi, even when DHCP moves the assignment to 
+  different addresses.  
 	
 Web Workflow Creation
 ---------------------
 
-The **initial screen** will list all previously created workflows with a small
-preview image and some information on their status. On clicking one of the
+The :ref:`initial screen<web-figure1>` will list all previously created workflows with a small
+preview image and some information on their status. By clicking one of the
 workflows, you will be taken to its details page where you can view all
 of the images and see more information on it. You can also choose to download
 a ZIP file with the workflow, containing all images and a configuration file.
 
-.. _web_figure1:
+.. _web-figure1:
 
 .. figure:: _static/web_list.png
 
@@ -123,9 +123,9 @@ importance/frequency-of-use(not the order in which they appear):
    |shoot-raw|
 
 .. hint::
-Most of the camera configuration data is sent directly to the CHDK firmware
-on the camera(s), therefore you may need to refer to the 
-`CHDK wiki <http://chdk.wikia.com/wiki/CHDK>`_
-to determine the appropriate settings for your camera.  Incorrect values can
-hang the cameras and/or spreads requiring a restart.
+  Most of the camera configuration data is sent directly to the CHDK firmware
+  on the camera(s), therefore you may need to refer to the 
+  `CHDK wiki <http://chdk.wikia.com/wiki/CHDK>`_
+  to determine the appropriate settings for your camera.  Incorrect values can
+  hang the cameras and/or spreads requiring a restart.
 
