@@ -1,5 +1,5 @@
-Web Install and Configuration
-=============================
+Web Plug-in Install and Configuration
+=====================================
 .. _web-install:
 
 Installation

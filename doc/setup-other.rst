@@ -1,7 +1,7 @@
 .. _python-install:
 
-Installation
-============
+Command-Line Installation
+=========================
 
 Prerequisites
 -------------
@@ -51,11 +51,9 @@ use with caution!)::
 
 .. _python-config: 
 
-Configuration
-=============
 
-Initial configuration
----------------------
+Command Line Initial Configuration
+----------------------------------
 To perform the initial configuration, launch the `configure` subcommand::
 
     $ spread configure
@@ -95,8 +93,8 @@ Once you're done, you can find the configuration file in the `.config/spreads`
 folder in your home directory.
 
 
-Configuration file
-------------------
+The Configuration file
+----------------------
 Upon first launch, *spreads* writes a configuration file to
 `~/.config/spreads/config.yaml`. In it, you can change all of the available
 settings to your liking. The configuration options are the same ones that

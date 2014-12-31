@@ -34,52 +34,37 @@ it work.
 
 The following configuration keys/command-line flags are available:
 
+.. include:: fields.dat
+
 .. program:: chdkcamera-driver
 
 .. option:: --sensitivity <int>
 
-   The ISO sensitivity value as a whole number. Default is 80.
+   |iso|
 
 .. option:: --shutter-speed <fraction>
 
-   The desired shutter speed as a fractional value. Default is 1/25.
-   The equivalent key in the configuration file is `shutter_speed`.
+   |shutter-speed|
 
 .. option:: --zoom-level <int>
 
-   The desired zoom-level as a whole number. Default is 3. Make sure that
-   this value is supported by your camera, or else you will get an error.
-   The equivalent key in the configuration file is `zoom_level`.
-
+   |zoom-level|
+   
 .. option:: --dpi <int>
 
-   The resolution in dots per inch that the camera captures at the given
-   zoom level. Default is 300. You can determine this value yourself by
-   taking a picture of an object with known dimensions, measuring its size
-   in pixels and calculate the dots per inch from that.
+   |dpi|
 
 .. option:: --shoot-raw
 
-   Shoot RAW images instead of JPEG. Please note that this setting is
-   **highly experimental** at the moment and RAW files are not supported
-   by the postprocessing and output plugins as of now.
-   The equivalent key in the configuration file is `shoot_raw`.
+  |shoot-raw|
 
 .. option:: --focus-distance <int/auto>
 
-   This option allows the user to set a fixed focus distance for the cameras
-   by specifying a whole number. This value can be obtained and automatically
-   set in the configuration fileby running the `configure` command and
-   following the instructions. By default, this value is set to `auto`,
-   which means that the camera will automatically re-focus for each capture,
-   which might give problems when there is no text or images in the center
-   of the image.
-   The equivalent key in the configuration file is `focus_distance`
+  |focus-distance|
 
 .. option:: --chdkptp-path <path>
 
-   Specify where the application can locate the `chdkptp` files. By default
-   this is `/usr/local/lib/chdkptp`.
+  |chdkptp-path|
 
 .. _CHDK: http://chdk.wikia.com
 .. _chdkptp: http://www.assembla.com/spaces/chdkptp
