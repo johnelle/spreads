@@ -7,12 +7,14 @@
    web_interface
    gui
    cli
+   tutorial
    faq
    drivers
    plugins
    contributing
    developers
    api
+   chdk-tutorial
    changelog
 
 About Spreads
@@ -26,7 +28,7 @@ At its core, it handles the communication with the imaging devices, the
 post-processing of the captured material and its assembly into output formats
 like PDF or ePub. On top of this base layer, we have built a variety of
 interfaces that should fit into most use cases: A full-fledged and
-mobile-friendly :doc:`web interface <web>` that works on even the most
+mobile-friendly :doc:`web interface <web_interface>` that works on even the most
 low-powered devices (like a Raspberry Pi, through the spreadpi distribution), a
 :doc:`graphical wizard <gui>` for classical desktop users and a bare-bones
 :doc:`command-line interface <cli>` for purists.
